@@ -21,7 +21,7 @@ def submit_form():
 			write_to_csv(data)
 			return redirect('/thankyou_page.html')
 		except:
-			return 'did not write to database.')
+			print('did not write to database.')
 	else:
 		return 'something went wrong'
 
