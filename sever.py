@@ -19,7 +19,7 @@ def submit_form():
 		try:
 			data = request.form.to_dict()
 			write_to_csv(data)
-			return redirect('/thankyou_page.html')
+			return redirect('/thankyou-page.html')
 		except:
 			print('did not write to database.')
 	else:
